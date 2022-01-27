@@ -1,0 +1,350 @@
+% -- Encoding UTF-8 without BOM
+% -- XeLaTeX => PDF (BIBER)
+
+\documentclass[]{cv-style}          % Add 'print' as an option into the square bracket to remove colours from this template for printing. 
+                                    % Add 'espanol' as an option into the square bracket to change the date format of the Last Updated Text
+
+\sethyphenation[variant=british]{english}{} % Add words between the {} to avoid them to be cut 
+
+%------------
+\usepackage{enumitem}
+\renewenvironment{entrylist}{%
+  \begin{itemize}[leftmargin=1in]%[leftmargin=*,align=left,itemindent=-\dimexpr\labelwidth+\labelindent+\labelsep\relax]
+}{%
+  \end{itemize}
+}
+\renewcommand{\bfseries}{\headingfont\color{headercolor}}
+\renewcommand{\entry}[4]{%
+  \item[#1]
+    \textbf{#2}%
+    \hfill%
+    {\footnotesize\addfontfeature{Color=lightgray} #3}\\%
+    #4\vspace{\parsep}%
+  }
+%-------
+
+\begin{document}
+
+\header{Zac }{Kologlu}
+\lastupdated
+
+%----------------------------------------------------------------------------------------
+%	SIDEBAR SECTION  -- In the aside, each new line forces a line break
+%----------------------------------------------------------------------------------------
+
+\begin{aside}
+%
+\section{contact}
++61 478 297 409
+\href{mailto:zac.kologlu@gmail.com}{zac.kologlu@gmail.com}
+\href{https://git.insou.dev/}{https://git.insou.dev/}
+\section{languages}
+Rust
+Java (+ JVM Bytecode)
+Kotlin
+ECMAScript / JS
+TypeScript
+C
+Haskell
+Ruby
+UNIX Shell
+Python
+Go
+C\#
+C++
+HTML / CSS
+SQL
+\LaTeX{}
+...
+%
+\end{aside}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{experience}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+  {2020-Now}
+  {UNSW}
+  {Sydney}
+  {\jobtitle{Course Administartor}\\
+  Working in the education, delivery and administration of COMP1521 \& COMP2041 across 21T1, 21T2, 21T3, 22T1, alongside Professor Andrew Taylor, Jashank Jeremy, Dylan Brotherston.
+  
+  Duties include development of teaching materials (tutorial content, lab exercises, weekly tests, assignments, final exams), Linux systems administration, development of course infrastructure, development of teaching tools (eg. mipsy, listed in "Projects" section below), assistance in the delivery of lectures, keeping the course afloat.}
+%------------------------------------------------
+\entry
+  {2019-Now}
+  {UNSW}
+  {Sydney}
+  {\jobtitle{Tutor - Computer Science}\\
+  Recruited by UNSW to teach 2 COMP1511 classes as an assistant tutor the very next term after taking the course (Term 2 of my first year). This involves running some classes of ~24 students throughout the term and working with another tutor to individually teach students during each lab session. 
+  
+  Hired as a full tutor in term 3 of 2019 (teaching 1st-5th year UNSW students computer science).
+  
+  \textbf{COMP1511} - AT: 19T2, Tutor: 19T3, 20T1, 21T1
+  
+  \textbf{COMP1521} - Tutor 20T2, 20T3, 21T2, 21T3, 22T1
+  
+  \textbf{COMP2041} - Tutor 21T1}
+%------------------------------------------------
+\entry
+  {2020-2021}
+  {Amazon Web Services}
+  {Sydney}
+  {\jobtitle{Software Development Engineer; Intern}\\
+  Worked in a 6-month internship in the AWS Redshift Sydney team -- a cloud data warehouse service for massive parallel processing.
+  
+  Personal project was to consolidate the previous 40+ step process to load sample-data into a new Redshift cluster into just a single simple step. Learnt the codebases of over a dozen internal services, pushing production changes to each of them in order to fulfil the project.
+  
+  Took keen ownership in the overall architecture of the project and how it would interact with existing systems. Collaborated with other AWS teams to coordinate the deployment, which is currently live in production AWS.}
+%------------------------------------------------
+\entry
+  {2021}
+  {UNSW CSESoc}
+  {Sydney}
+  {\jobtitle{Projects Director (Technical)}\\
+  Directed the UNSW CSESoc Projects Subcommittee alongside Esther Wong for 2021. 7 team-leads (direct reports) spanning 35 team-members (indirect reports). Responsibilities include liaising between team-leads and CSESoc executive team, fortnightly meetings with each team-lead to discuss progress, strategy, vision.
+  
+  As the technical projects director, duties also include systems administration of CSESoc's technical suite. This includes managing the Kubernetes control plane, maintaining availability of CSESoc services and providing technical advice and insight to team-leads and other subcommittees.
+}
+%------------------------------------------------
+\entry
+  {2018-2020}
+  {The NRMA}
+  {Sydney}
+  {\jobtitle{Developer; DevSecOps}\\
+  Worked at NRMA in the digital sector as a full time developer (moved to part time during university term), worked on building ground up systems for IVR with AWS (Amazon Connect, Polly, Lex, Lambda, etc.).
+  
+  Presented a live-demo on the technology company wide (including the CTO, GM’s, etc.), for cloud based IVR systems and offered a highly available and scalable solution to help cut costs and technical debt.
+
+  Secured existing wiki systems with cross origin token-based auth for critical NRMA roadside driver demo videos (eg. break-in demonstrations) through Amazon Cognito + S3 backend, with user federation between many different authentication platforms (Oracle, AD, etc.).
+
+  Developed and presented a full AWS Cognito user management system for NRMA CSRs built with Google Go, React JS, AWS Lambda, CloudFront, CloudFormation, Serverless, etc. connected through a separate logging stack to services such as SumoLogic for tracking and analytics.
+
+  Developed and presented a new NRMA Parks \& Resorts check-in experience to the company (including CEO, CTO, etc.) as part of a 24-hour hackathon event, winning a prize with my team.
+}
+%------------------------------------------------
+\entry
+  {2018-2019}
+  {Private tutor}
+  {Sydney}
+  {\jobtitle{HSC Maths / Software Design + Development}\\
+  Worked as a private tutor for 3 different high school students in mathematics, and software design + development.}
+%------------------------------------------------
+\entry
+  {2017-2018}
+  {Servide}
+  {AU/CA}
+  {\jobtitle{Co-CEO}\\
+  Started online business "Servide" with a partner in Canada to provide custom in-house software solutions for a range of clients. 
+  Worked on many projects, hired staff for additional development, managed teams, etc.
+  Planned and developed platforms/systems from the ground up.
+  Approx. 30 clients through 2017-2018.}
+%------------------------------------------------
+\entry
+  {2017}
+  {NSW Department of Education, Integration Centre}
+  {Sydney}
+  {\jobtitle{Work placement}\\
+  Attended work placement (experience) for period of 1 week, age 17. Chose to take on new project proposal with timeframe 1-2 months. Completed the project within 1 week, and was offered a permanent position on the team.}
+%------------------------------------------------
+\entry
+  {2015-2017}
+  {UlfricProjects}
+  {FL, USA (Remote)}
+  {\jobtitle{Platform Architect}\\
+  Designed a variety of platforms and systems, including extremely cost-effective dynamic pre-emptive VMs on the Google Cloud Compute platform in order to run game servers. Worked on REST client/server library "chomp", using low-level Java runtime bytecode manipulation in order to simplify API creation + interaction processes.}
+%------------------------------------------------
+\entry
+  {2016}
+  {Vodafone}
+  {Sydney}
+  {\jobtitle{Work experience}\\
+  Attended work experience for a period of 1 week, age 16. Was shown payment processing / stock management systems by other developers. Improved code cleanliness, improved performance, fixed small issues/vulnerabilities that I found. Discussed improvements to the platform that could be made in future. Worked with QA, helped develop integration testing processes.}
+%------------------------------------------------
+\entry
+  {2015--2018}
+  {Freelance Software Development}
+  {}
+  {\jobtitle{Self-Employed}\\
+  Continually worked on online freelance projects for many different clients and businesses. ~50+ unique projects total.\\}
+  %Detailed achievements:
+  %\begin{itemize}
+  %  \item Achievement 1. Achievement 1. Achievement 1. Achievement 1. %Achievement 1. Achievement 1. Achievement 1. Achievement 1. 
+  %\end{itemize}
+%------------------------------------------------
+\entry
+  {2010--Now}
+  {Hobby Development}
+  {}
+  {Continually worked on an extremely wide range of projects for personal interest. 200+ unique projects total. 60+ are open sourced on my Github profile, more in my Github organisations.\\}
+%------------------------------------------------
+
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{projects}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+  {2020-Now}
+  {mipsy}
+  {\href{https://git.insou.dev/mipsy}{https://git.insou.dev/mipsy}}
+  {todo!()}
+%------------------------------------------------
+\entry
+  {2021}
+  {talloc}
+  {\href{https://talloc.web.cse.unsw.edu.au/}{https://talloc.web.cse.unsw.edu.au/}}
+  {todo!()}
+%------------------------------------------------
+\entry
+  {2021}
+  {typing-the-technical-interview-rust}
+  {\href{https://git.insou.dev/typing-the-technical-interview-rust}{https://git.insou.dev/typing-the-technical-interview-rust}}
+  {todo!()}
+%------------------------------------------------
+\entry
+  {2017}
+  {chomp}
+  {\href{https://git.insou.dev/chomp}{https://git.insou.dev/chomp}}
+  {todo!()}
+%------------------------------------------------
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{education}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2019--2022}
+{B.Sc. (Computer Science) \normalfont [HD WAM]}
+{UNSW}
+{(Grad. May 2022)}
+%------------------------------------------------
+\entry
+{2013--2018}
+{\normalfont Manly Selective Campus [96.8 ATAR]}
+{High School}
+{\vspace{-0.3cm}}
+%------------------------------------------------
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{awards}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2019}
+{The Macquarie Performance Prize for Year 1 \normalfont [1st place]}
+{UNSW}
+{Awarded to the student for the (1st) best performance in UNSW CSE for year 1.}
+\entry
+{2019}
+{Dean's Honours List \normalfont [Highly Commended]}
+{UNSW}
+{\vspace{-0.3cm}}
+\entry
+{2020}
+{Dean's Honours List \normalfont [Highly Commended]}
+{UNSW}
+{\vspace{-0.3cm}}
+%------------------------------------------------
+\end{entrylist}
+
+% %----------------------------------------------------------------------------------------
+% %	COURSES SECTION
+% %----------------------------------------------------------------------------------------
+%
+% 
+% Generally not desired, but left commented
+% if needed in future
+%
+% \section{courses}
+%
+% \begin{entrylist}
+% %------------------------------------------------
+% \entry
+% {19T1}
+% {COMP1511, MATH1131}
+% {}
+% {\vspace{-0.3cm}}
+% \entry
+% {19T2}
+% {COMP1521, COMP2521, MATH1081}
+% {}
+% {\vspace{-0.3cm}}
+% \entry
+% {19T3}
+% {COMP1531, COMP3331, MATH3411}
+% {}
+% {\vspace{-0.3cm}}
+% \entry
+% {20T1}
+% {COMP3891, COMP3821, COMP6841}
+% {}
+% {\vspace{-0.3cm}}
+% \entry
+% {20T2}
+% {COMP2041, COMP2511, COMP3141, COMP6843}
+% {}
+% {\vspace{-0.3cm}}
+% \entry
+% {20T3}
+% {COMP3901}
+% {}
+% {\vspace{-0.3cm}}
+% \entry
+% {21T1}
+% {COMP3131, MATH1231}
+% {}
+% {\vspace{-0.3cm}}
+% \entry
+% {21T2}
+% {COMP3900}
+% {}
+% {\vspace{-0.3cm}}
+% \entry
+% {21T3}
+% {COMP3161, COMP4920, EDST1101}
+% {Completed}
+% {\vspace{-0.3cm}}
+% \entry
+% {22T1}
+% {COMP3311, ECON1101}
+% {Present}
+% {\vspace{-0.3cm}}
+% %------------------------------------------------
+% \end{entrylist}
+
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{interests}
+  \vspace{-0.2cm}
+
+\textbf{professional:} Computer science education, Rust, program correctness, static program semantics, compilers, systems programming, programming language tooling.
+
+\textbf{personal:} Mechanical engineering, games, VR, home-bartending.
+
+%----------------------------------------------------------------------------------------
+
+\end{document}

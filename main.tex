@@ -7,6 +7,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \documentclass[a4paper]{deedy-resume}
+\usepackage{fontawesome}
 
 \begin{document}
 
@@ -15,6 +16,17 @@
 %----------------------------------------------------------------------------------------
 
 \lastupdated % Print the Last Updated text at the top right
+
+\begin{textblock}{25}(0,2)
+	\faGithub   \enspace \href{https://github.com/insou22}
+				              {\underline{insou22}}
+
+	\faLinkedin \enspace \href{https://www.linkedin.com/in/zac-kologlu-3184a0114/}
+							  {\underline{Zac Kologlu}}
+
+	\faYoutube  \enspace \href{https://www.youtube.com/channel/UC_lXC61mYV65mXKbHo23owg/}
+							  {\underline{Zac Kologlu}}
+\end{textblock}
 
 \namesection{Zac}{Kologlu}{
 \href{mailto:zac.kologlu@gmail.com}{zac.kologlu@gmail.com} | 0478 297 409
@@ -40,56 +52,16 @@
 
 \sectionspace
 
-%------------------------------------------------
-
-\subsection{Manly Selective Campus}
-
-\location{Grad. 2018}
-
-\sectionspace
-
-%------------------------------------------------
-% Links
-%------------------------------------------------
-
-\section{Links} 
-
-GitHub:   \href{https://github.com/insou22}
-               {\underline{insou22}} \\
-LinkedIn: \href{https://www.linkedin.com/in/zac-kologlu-3184a0114/}
-               {\underline{Zac Kologlu}} \\
-YouTube:  \href{https://www.youtube.com/channel/UC_lXC61mYV65mXKbHo23owg/}
-               {\underline{Zac Kologlu}} \\
-
-\sectionspace
-
-%------------------------------------------------
-% Projects
-%------------------------------------------------
-
-\section{Projects}
-
-\href{https://github.com/insou22/typing-the-technical-interview-rust}
-	{\underline{Typing the technical interview}}; \textbf{Rust} \\
-\href{https://github.com/insou22/mipsy}
-	{\underline{mipsy}}; \textbf{ Rust} \\
-\href{https://github.com/insou22/flymark}
-	{\underline{flymark}}; \textbf{ Rust} \\
-\href{https://cgi.cse.unsw.edu.au/~talloc/}
-	{\underline{talloc}}; \textbf{ JavaScript} \\
-\href{https://github.com/insou22/chomp}
-	{\underline{chomp}}; \textbf{ Java} \\
-
-\sectionspace
-
-%------------------------------------------------
-
-\section{Awards}
+\subsection{Awards}
 
 \textbf{2019}
 The Macquarie Performance \\
-Prize for Year 1 \\
+Prize for highest academic performance
+in CSE (Year 1) \\
 {\footnotesize \textit{\textbf{(1st Place) }}} \\
+
+\textbf{2019}
+Co-op Scholarship \\
 
 \textbf{2019}
 Dean's Honours List \\
@@ -99,27 +71,80 @@ Dean's Honours List \\
 Dean's Honours List \\
 {\footnotesize \textit{\textbf{(Highly Commended) }}} \\
 
+\textbf{2020}
+Atlassian CTF \\
+{\footnotesize \textit{\textbf{(5th Place) }}} \\
+
+\sectionspace
+
+\subsection{Marks}
+\textbf{98 HD} Programming Fundamentals \\
+\textbf{100 HD} Computer Systems Fundamentals \\
+\textbf{90 HD} Data Structures and Algorithms \\
+\textbf{85 HD} Software Eng. Fundamentals \\
+\textbf{SY} Extended Operating Systems \\
+\textbf{SY} Extended Security Engineering \\
+\textbf{93 HD} Software Sys Des \& Implementat'n \\
+\textbf{95 HD} Special Project A \\
+\textbf{94 HD} Prog. Lang's \& Compilers \\
+\textbf{93 HD} Concepts of Prog. Langs \\
+\textbf{94 HD} Educational Psychology \\
+\textbf{93 HD} (In-)Formal Methods
+
+%------------------------------------------------
+% Projects
+%------------------------------------------------
+
+\section{Projects}
+
+\href{https://github.com/insou22/mipsy}
+	{\underline{mipsy}}; \textbf{ Rust}
+
+An education-focused MIPS32 emulator
+aiming to provide excellent diagnostics
+and debugging capabilities for students
+learning assembly code.
+
+\vspace{6pt}
+
+\href{https://github.com/insou22/typing-the-technical-interview-rust}
+	{\underline{Typing the technical interview}}; \textbf{Rust}
+
+A demonstration of type-level programming,
+displaying the Turing-complete capability
+of Rust's powerful type system.
+
+\vspace{6pt}
+
+\href{https://github.com/insou22/flymark}
+	{\underline{flymark}}; \textbf{ Rust}
+
+An asynchronous terminal-UI marking client
+used by teachers at UNSW to mark student
+assignments at speed.
+
+\vspace{6pt}
+
+\href{https://cgi.cse.unsw.edu.au/~talloc/}
+	{\underline{talloc}}; \textbf{ JavaScript}
+
+Our full-stack application \& hiring platform
+used by the school of CSE.
+
+\vspace{6pt}
+
+\href{https://github.com/insou22/chomp}
+	{\underline{chomp}}; \textbf{ Java}
+
+HTTP-based Java interface messaging protocol,
+demonstrating low-level knowledge of the Java 
+Virtual Machine.
+
 \sectionspace
 
 %------------------------------------------------
-% Skills
-%------------------------------------------------
 
-\section{Skills}
-
-Software development \\
-Teaching \\
-Program correctness \\
-Type systems \\
-Static program semantics \\
-Compilers \\
-Linux systems-administration \\
-Systems programming \\
-Program performance \\
-Programming language tooling \\
-Technical writing
-
-\vspace{5cm}
+\vspace{0.6cm}
 \subsection{\LaTeX \ \ Source}
 
 \href{https://github.com/insou22/resume}
@@ -147,7 +172,7 @@ Technical writing
 \runsubsection{UNSW}
 \descript{| Lecturer}
 
-\location{May 2022 – Present | Sydney, AUS}
+\location{May 2022 – Present (2 terms) | Sydney, AUS}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightitemize}
 \item
@@ -155,15 +180,17 @@ Technical writing
 	a brand new course \\
 	\href{https://www.handbook.unsw.edu.au/undergraduate/courses/current/COMP6991}
 		 {\underline{COMP6991 - Solving Modern Programming Problems with Rust}}
-\item First offering of 100 students, with a teaching team of 6.
-\item Managed overall administration and delivery of the course.
+\item First offering of 100 students, coordinating a teaching team of 6.
+\item Managed overall administration and delivery of the course,
+	  including soliciting student feedback and
+	  iterating on design in response.
 \item
 	\textbf{22T2}: Lectured and administrated core course \\
 	\href{https://www.handbook.unsw.edu.au/undergraduate/courses/current/COMP1521}
 		 {\underline{COMP1521 - Computer Systems Fundamentals}}
 \item Approximately 800 enrolled students.
 \item Coordinated hiring \& timetabling followed by
-	  in-session management of 33 teaching staff.
+	  in-session management of 33 teaching staff over $\approx$ 14 weeks.
 \item Managed overall administration and delivery of the course.
 \end{tightitemize}
 
@@ -174,7 +201,7 @@ Technical writing
 \runsubsection{UNSW}
 \descript{| Course Administrator / Teacher}
 
-\location{May 2019 – May 2022 | Sydney, AUS}
+\location{May 2019 – May 2022 (9 terms) | Sydney, AUS}
 \begin{tightitemize}
 \item Education, delivery, administration of Computer Science courses.
 \item Extensive Linux sysadmin,
@@ -183,7 +210,7 @@ Technical writing
 	  development of teaching tools (see: mipsy project).
 \item Teaching 1-3 classes each of 24 students per course offering.
 \item \textbf{COMP1521}: \textbf{Tutor} 20T2, 20T3,
-						 \textbf{Admin} 21T2, 21T3, 22T1, 22T2
+						 \textbf{Admin} 21T2, 21T3, 22T1
 \item \textbf{COMP2041}: \textbf{Admin} 21T1
 \item \textbf{COMP1511}: \textbf{AT}    19T2,
 						 \textbf{Tutor} 19T3, 20T1, 21T1.
@@ -194,15 +221,17 @@ Technical writing
 %------------------------------------------------
 
 \runsubsection{AWS}
-\descript{| Software Development Engineer (Placement)}
+\descript{| Software Development Engineer}
 
 \location{Sep 2020 – Feb 2021 | Sydney, AUS}
 \begin{tightitemize}
-\item 6-month placement in AWS Redshift Sydney (cloud big data).
+\item Worked in the AWS Redshift Team (cloud big-data)
+	  in a 6-month placement.
 \item Consolidated previous 40+ step process for customers
 	  to load sample data into a single simple step.
-\item Maintained strong project ownership, collaberated with other
-	  AWS teams, deployed into live production.
+\item Maintained strong project ownership, collaborated
+	  on overall architecture and deployed + monitored changes
+	  into live production.
 \end{tightitemize}
 
 \sectionspace
@@ -215,9 +244,9 @@ Technical writing
 \location{Dec 2020 – Dec 2021 | Sydney, AUS \\
 		  Volunteering Position}
 \begin{tightitemize}
-\item Co-Directed Projects Subcomittee;
+\item Co-Directed Projects Subcommittee;
 	  7 direct-reports spanning 35 members.
-\item Liased between reports (individual teams) and
+\item Liaised between reports (individual teams) and
 	  CSESoc executive team to manage progress,
 	  strategy and vision.
 \item Sole systems-administrator of CSESoc services,
